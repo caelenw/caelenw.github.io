@@ -1,20 +1,49 @@
 /* structure */
 body {
-    background:violet;
+    background:#696969; /*Colors and color chart in blackboard links */
     font-family:arial,Arial, Helvetica, sans-serif;
 
 }
 div {
-    background:white;
+    background:green;
     padding:5px;
     margin:20px auto;
     width:70%;
+    border-radius:10px; /*Curved edges on the box*/
+
+}
+
+#main-nav ul {
+    padding-left:0%; /* removes the padding/indent on the list */
+    width:fit-content;
+    margin:auto;
+}
+/*no bullets */
+#main-nav li {
+    list-style-type:none;
+    display:inline-block;   /*makes the list appear sideways on one line */
+
+}
+/*navigation this will remove the undlerlink for links*/
+
+#main-nav a {
+    text-decoration: none;
+    color:pink;
+    background:Black;
+    padding:5px;
+    margin:5ptx;
+    border-radius:2px;
+}
+
+#main-nav a:hover {
+    background:black;
+    color:blue;
 }
 /* Typography */
 h1{ 
-    color:red;
+    color:white;
 }
 
 p {
-    color:blue;
+    color:White;
 }

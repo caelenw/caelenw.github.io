@@ -1,14 +1,17 @@
 body {
     color:#ff0000;
     background-color: #ff4d4d;
+    font-family:Arial, Helvetica, sans-serif;
+    background:url(images/bg.jpg);
+    background-size:cover;
+
 }
 div {
     background:#ffcccc;
     padding:5px;
     margin: 20px auto;
     border-radius:10px; /*Curved edges on the box*/
-
-    width:90%
+    width:80%
 }
 
 #menu ul {
@@ -50,7 +53,7 @@ div {
     border-radius:8px;
 }
 .apples {
-    width:50px;
+    width:100px;
 }
 #table {
     text-align: right;
@@ -61,7 +64,8 @@ div {
 }
 #main-table {
     text-align: center;
+    padding:2px;
     border-collapse:collapse;
     margin:0 auto;
-    width:80%;
+    width:100%;
 }

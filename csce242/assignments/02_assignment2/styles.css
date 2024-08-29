@@ -29,7 +29,6 @@ div {
     margin:5px;
     background-color: #ff6666;
 }
-
 #menu a {
     text-decoration: none;
     color:black;
@@ -64,7 +63,7 @@ div {
 }
 #main-table {
     text-align: center;
-    padding:2px;
+    padding:3px;
     border-collapse:collapse;
     margin:0 auto;
     width:100%;

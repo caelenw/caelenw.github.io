@@ -1,16 +1,25 @@
 body {
-    background-color: #191970;
-    color: #0a0a2d;
+    background-color: #002633;
+    color: 002633;
+    font-family:Arial, Helvetica, sans-serif;
 }
 div {
-    background-color:#ffffff;
+    background-color:#99e5ff;
     padding: 20px;
     margin:auto;
     width:auto;
     border-radius: 25px;
 }
-
+ 
 #main-nav a {
-    color: #02020b;
+    color: #001319;    
     text-decoration: none;
+    display:inline-block;
+}
+
+
+li {
+    text-align: center;
+    list-style-type: none;
+    display:inline-block;
 }

@@ -1,18 +1,21 @@
 body {
-    color:red;
-    background-color: gray;
+    color:#ff0000;
+    background-color: #ff4d4d;
 }
 div {
-    background: white;
+    background:#ffcccc;
     padding:5px;
     margin: 20px auto;
+    border-radius:10px; /*Curved edges on the box*/
+
     width:90%
 }
 
 #menu ul {
-    padding:0%;
     width:fit-content;
     margin:auto;
+    border-radius:5px;
+    display:inline-block;
 }
 
 #menu li {
@@ -21,31 +24,44 @@ div {
     padding:20px;
     border:2px;
     margin:5px;
-    background-color: red;
+    background-color: #ff6666;
 }
 
 #menu a {
     text-decoration: none;
-    color:white;
+    color:black;
     padding: 5px;
-    margin: 5px;
-    border-radius: 2px;
+    margin: 5px auto;
+    border-radius: 50px;
 }
 
 #menu a:hover {
     padding:20px;
-    margin:5px;
-    border-radius: 3px;
-    background:Green;
+    width:80px;
+    margin:5px auto;
+    border-radius: 5px;
+    background:#ffb3b3;
     color:white;
 }
 #pic1 {
     width:100%;
     max-height: 200px;
+    padding:2px;
+    border-radius:8px;
 }
+.apples {
+    width:50px;
+}
+#table {
+    text-align: right;
+}
+
 #main-header {
     text-align: center;
 }
 #main-table {
     text-align: center;
+    border-collapse:collapse;
+    margin:0 auto;
+    width:80%;
 }

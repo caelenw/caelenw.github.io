@@ -1,0 +1,16 @@
+body {
+    background-color: #191970;
+    color: #0a0a2d;
+}
+div {
+    background-color:#ffffff;
+    padding: 20px;
+    margin:auto;
+    width:auto;
+    border-radius: 25px;
+}
+
+#main-nav a {
+    color: #02020b;
+    text-decoration: none;
+}

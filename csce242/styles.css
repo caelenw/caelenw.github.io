@@ -18,7 +18,7 @@ h3 {
 div {
     padding: 20px;
     margin: auto;
-    width: auto;
+    width: 90%;
     border-radius: 25px;
     text-align: center;
 }
@@ -34,8 +34,8 @@ div {
 }
 
 img {
-    max-width: 100%; 
-    height: auto;   
+    max-width: 200px; 
+    height: 200px;   
     display: block;
     margin: 0 auto;  
 }
@@ -81,11 +81,11 @@ li {
     padding: 30px; 
     margin: 30px auto; 
     border-radius: 15px;
-    width: auto; /* Adjust width */
-    max-width: auto; /* Set a max-width */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%; 
+    max-width: 1200px; 
+    height: auto; 
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .main-page-holder a {

@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <div>
-        <head>
-            <link rel="stylesheet" href="styles.css">
-            <h1> CSCE 242: Website Applications</h1>
-            <h1> Caelen Wall</h1>
-        </head>
-        <body>
-            <p1>This course is used to utilize HTML and CSS in order to create the front end side of a Website. <br> Students will learn to utilize JavaScript in order to create a functionally working website. <br>In addition this course will teach ways to utilize servers to retrieve and store data.</p1>
-            <nav id="main-nav">
-                <div>
-                    <h2> Assignements </h2>
-                    <div id="assignments"><li><a href="assignments/01_assignment1/index.html">1.Basic HTML</a></li></div>
-                    <div id="assignments"><li><a href="assignments/02_assignment2/index.html">2.Basic CSS</a></li></div>
-                </ul>
-            </nav>
-        </body>
+<head>
+    <!-- Designing the layout and adding style to home page-->
+    <title>Assignments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> 
+        <h1>CSCE 243: Client-Server Computing</h1>
+        <h2>Caelen Wall</h2>
+        <h2>Assignments</h2>
+    </header>
+    <div id="content">
+        <section class="main-section">
+            <div class="columns">
+                <a href="assignments/01_assignment1/index.html" class="assignment-link">
+                    <section class="one">
+                        <div class="main-page-holder">
+                            <h3>Assignment 1 - Basic HTML</h3>
+                            <img id="images" src="images/aaignment1pic.png" alt="Assignment 1 - Basic HTML">
+                            <p>Learning the basic fundamentals of web design using basic HTML. Learning to create titles, paragraphs, headings, and subheadings.</p>
+                        </div>
+                    </section>
+                </a>
+                <a href="assignments/02_assignment2/index.html" class="assignment-link">
+                    <section class="two">
+                        <div class="main-page-holder">
+                            <h3>Assignment 2 - Basic CSS</h3>
+                            <img id="images" src="images/2.png">
+                            <p>Create a main page with custom fonts, colors, and a styled layout. Made a new page with a title, navigation, content, images, and a table, all featuring consistent and appealing styling.</p>
+                        </div>
+                    </section>
+                </a>
+                <a href="assignments/03_assignment3/index.html" class="assignment-link">
+                    <section class="three">
+                        <div class="main-page-holder">
+                            <h3>Assignment 3 - Page layout</h3>
+                            <img id="images" src="images/3.png">
+                            <p>Details about the assignment.</p>
+                        </div>
+                    </section>
+                </a>
+            </div>
+        </section>
     </div>
+    <footer id="main-footer">
+        <p>&copy; caelenw</p>
+    </footer>
+</body>
 </html>

@@ -78,11 +78,11 @@ li {
 
 .main-page-holder {
     background-color: #dae3f3; 
-    padding: 20px; 
-    margin: 10px auto; 
+    padding: 30px auto; 
+    margin: 30px auto; 
     border-radius: 15px;
-    width: 320px;
-    height: 300px;
+    width: 20px auto;
+    height: 30px auto;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
 }

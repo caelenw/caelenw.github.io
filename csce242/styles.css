@@ -81,8 +81,8 @@ li {
     padding: 30px; 
     margin: 30px auto; 
     border-radius: 15px;
-    width: 80%; /* Adjust width */
-    max-width: 1200px; /* Set a max-width */
+    width: auto; /* Adjust width */
+    max-width: auto; /* Set a max-width */
     height: auto; /* Maintain aspect ratio */
     color: black;
     font-family: Arial, Helvetica, sans-serif;

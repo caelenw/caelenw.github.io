@@ -22,6 +22,10 @@ div {
     border-radius: 25px;
     text-align: center;
 }
+#main-project {
+    display:flex;
+    flex-direction: row;
+}
 
 #main-page-holder {
     width: auto;

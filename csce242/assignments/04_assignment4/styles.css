@@ -1,0 +1,646 @@
+:root {
+    --main-background-color: white;
+    --carolina-background-color: #73000A; 
+    --gray-background-color:#ECECEC;
+    --black-background-color:black;
+    
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+}
+
+#hr {
+    border:0;
+    height:2px;
+}
+
+#take-next2 h2 {
+  border:5px solid var(--main-background-color);
+  padding:10px;
+  width:200px;
+  background-color: var(--carolina-background-color);
+}
+
+#bottom-bar ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+    text-align: left; 
+    padding-bottom: 5%;
+    width:100% auto;
+    
+}
+
+.column-holder {
+    display: flex;             
+    justify-content: center;    
+    gap: 10px;                 
+    width: 50%;                 
+    margin: 0 auto;           
+}
+
+.column img {
+    max-width: 100%;   
+    height: auto;           
+}
+
+#college {
+    display: flex;                
+    flex-wrap: wrap;            
+    gap: 20px;                   
+    justify-content: space-between; 
+    width: 100%;                 
+    padding-top: 20px; 
+    flex-direction: row;           
+}
+
+#c1 {
+    display: flex;
+    flex-direction: row;          
+    flex-wrap: wrap;              
+    gap: 20px;                     
+    flex: 1;                      
+    justify-content: flex-start;  
+    margin-left:20px;
+}
+
+#c1 ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+#college ul li {
+    flex: 1;                      
+    padding: 10px;               
+    text-align: left;             
+    box-sizing: border-box;       
+}
+
+#college ul {
+    display: flex;                
+    flex-direction: column;          
+    flex-wrap: wrap;             
+    justify-content: space-around; 
+    padding: 0;                   
+    margin: 0;                    
+    list-style: none;             
+}
+
+#pfs p {
+    text-align: left;
+    position: relative;
+    width:65%;
+    font-size: 16px;
+}
+
+#edp1 {
+    text-align: left;
+    padding-left:1%;
+}
+
+#edp h3 {
+    padding:1%;
+    background-color: black;
+    color:var(--main-background-color);
+    width:fit-content;
+    border:3px solid var(--main-background-color);
+}
+
+#column {
+    width:25%;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+#ttns {
+    display: flex;
+    width:100%;
+    height: 310px auto;               
+    background-color: black;     
+}
+
+#image-column {
+    width: 50%;
+}
+
+#text-column {
+    width: 50%;
+    padding: 20px;
+}
+
+#cap {
+    width: 10%;
+    height: auto;
+}
+
+#college-holder {
+    display:flex;
+    flex-direction:column;
+    width:auto;
+    text-align: left;
+    gap:4px;
+}
+
+#college-part {
+    display:flex;
+    flex-direction: row;
+    background-color: var(--carolina-background-color);
+    gap:1%;
+}
+
+#below-college-title {
+    display:flex;
+    flex-direction: row;
+}
+
+#tools-1 {
+    text-align: left;
+}
+
+#d3 {
+    background-color: var(--gray-background-color);
+    padding:3%;
+    color:black;
+    font-size: 30px;
+}
+
+#d3 p {
+    text-align: center;
+    font-size: 70%;
+    width:70%;
+    padding-left:15%;
+}
+
+#grad-admin {
+    width: 61%;
+    font-size: 50px;
+    padding: 1%;
+    position: absolute; 
+    left: 10%;         
+    bottom: -20px; 
+    background-color: var(--carolina-background-color);
+}
+
+#main-content {
+    color: white;
+    text-align: center;
+    width: 100%;
+    display:block;
+}
+
+#header {
+    position: relative;
+    padding: 10px 5%;
+    background-color: black;
+}
+
+#utility-menu {
+    width: auto;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    font-size: 10px;
+}
+
+.utility-links {
+    display: flex;
+    gap: 10px;
+    padding-left: 0;
+    margin: 0;
+}
+
+.utility-links li {
+    list-style-type: none;
+}
+
+.utility-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.utility-links a:hover {
+    text-decoration: underline;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-container {
+    display: flex;
+    padding-right:160px;
+}
+
+#logo {
+    width: 100%;
+    margin-left: 380px;
+}
+
+#davis-college {
+    display: flex;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #73000A;
+}
+
+.main-menu li {
+    list-style-type: none;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.main-menu a:hover {
+    text-decoration: solid;
+    background-color: #CC2E40;
+}
+
+.utility-links a:hover {
+    text-decoration: none;
+    background-color: red;
+}
+
+#davis-college {
+    width: 100%; 
+    max-width: 100%;  
+    height: auto;  
+    display: block;  
+}
+
+#edp {
+    background-color: var(--carolina-background-color);
+    display:flex; 
+}
+
+#gdp {
+    display:flex;
+}
+
+#gsa {
+    padding:1%;
+    padding-bottom: 2%;
+}
+
+#gda-p {
+    margin: 0 auto;
+    padding: 20px; 
+    width: 70%;
+    font-weight: bold;
+    color: #333; 
+    text-align: left; 
+}
+
+#med-head {
+    padding:2%;
+    font-size: 20px;
+    }
+
+footer {
+    background-color: var(--black-background-color); 
+    color: var(--main-background-color);
+    padding: 18px 0;
+    text-align: center; 
+}
+
+#end-foot ul {
+    display:flex;
+    flex:wrap;
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+#end-foot {
+    display: flex; 
+    justify-content: center; 
+    width:100% auto;
+}
+
+#gda-low {
+    font-size: 16px; 
+    margin-top: 10px; 
+}
+
+#foot-link {
+    background-color: var(--carolina-background-color);
+    width:100%;
+}
+
+#end-foot {
+    display: flex;         
+    justify-content: center; 
+    background-color: var(--black-background-color); 
+    font-size:10px;
+}
+
+#end-foot ul {
+    list-style: none;      
+    margin: 0;            
+    padding: 0;            
+    display: flex;         
+}
+
+#end-foot li {
+    margin: 0 10px;        
+}
+
+#top-bar {
+    Display:flex;
+    width:100%;
+    background-color: var(--carolina-background-color);
+    align-items: center;
+    padding-top:4%;
+}
+
+#imgandicon {
+    display:flex;
+    flex-direction: row;
+    padding-left:25%;
+    align-items: center;
+    width:65%;
+    background-color: var(--carolina-background-color);
+    gap:50%;
+}
+
+#edp {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+#edp img {
+    width: 50%;
+    height: auto; 
+}
+
+#office-title {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+}
+
+#edp h2 {
+    margin: 0; 
+    font-size: 24px;
+    color: var(--main-background-color);
+}
+
+#pfs-h p {
+    color:black;
+}
+
+#top-f {
+    display:flex;
+}
+
+@media only screen and (max-width: 600px) {
+    #main-content {
+        background-color: var(--main-background-color);
+    }
+    #logo {
+        width: 100%;
+        margin-left: 20px;
+    }
+    #foot-link {
+        display:flex;
+        flex-direction: column;
+    }
+    #end-foot {
+        display:flex;
+    }
+    #imgandicon {
+        display:flex;
+        flex-direction: column;
+    }
+    #utility-menu {
+        display:none;
+    }
+    
+    .main-menu {
+        flex:1;
+        flex-direction: row;
+        gap: 40px; 
+        padding-left: 0;
+        margin: 0;
+    }
+    
+    #gsa {
+        position: relative;
+        top:3%;
+        padding-bottom: 40%;
+    }
+    #gsa h2 {
+        padding-top:3%;
+    }
+    #grad-admin {
+        width: 80%;
+        font-size: 30px;
+        padding: 5%;
+        position: absolute; 
+        left: 1%;         
+        bottom: 550px; 
+        background-color: var(--main-background-color);
+        color:black;
+        text-align:left;
+    }
+   
+    #med-head  {
+        text-align: left;
+        position: relative;
+    }
+    #take-next {
+        display: flex;
+        flex-direction: column;
+    }
+    #text-column {
+        text-align: left;
+        width:95%
+    }
+    #ttns img {
+        width: auto;
+        height: auto;
+        position:relative;
+        left:30%;
+        top: -15px;
+    }
+  
+    #edp {
+        display:flex;
+        flex-direction: column;
+    }
+    #edp img {
+        width:100%;
+    }
+    #d3 h3 {
+        background-color: var(--carolina-background-color);
+        color: var(--main-background-color);
+        padding: 3%;
+        text-align: center;
+        width: 34%;
+        position: relative;
+        left:30%;
+        font-size:16px;
+    }
+    #pfs h2 {
+        padding-top:10%;
+        align-items: center;
+        font-size: 34px;
+        color:black;
+    }
+    #pfs-h p {
+        text-align: center;
+        margin-left:15%;
+        padding:1%;
+    }
+    .column-holder {
+        width: 100%;            
+        max-width: 100%;        
+        flex-direction: column; 
+        margin: 0;             
+    }
+    .column {
+        color: var(--black-background-color);
+        background-color: var(--main-background-color);
+        box-sizing: border-box;     
+        display: flex;
+        flex-direction: column;    
+        align-items: center;        
+        margin: 1%;                 
+        font-size: 12px;
+    }
+    #usclogo {
+        margin: 0 auto;         
+        display: f;
+        padding-bottom: 10px;   
+    }
+    #bottom-bar {
+        display:flex;
+        flex-direction: row;
+        padding-bottom: 3%;
+
+    }
+  
+    #college-part {
+        display:flex;
+        flex:1;
+        flex-direction:column;
+        width:100% auto;
+        padding-top:2%;
+
+    }
+    #below-college-title {
+        text-align: left;
+        list-style:none;
+        display:flex;
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+    #below-college-title li {
+        text-decoration-style: none;
+    }
+    #of-1 {
+        display:flex;
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width:601px) {
+    .main-menu {
+        display: flex;
+        gap: 40px; 
+        padding-left: 0;
+        margin: 0;
+    }
+
+    #med-head {
+        width:60%;
+        text-align: left;
+        align-items: center;
+    }
+
+    #d3 h3 {
+        background-color: var(--carolina-background-color);
+        color: var(--main-background-color);
+        padding: 1%;
+        text-align: center;
+        width: fit-content;
+        position: relative;
+        left:40%;
+    }
+
+    .column {
+        flex: 1;                    
+        max-width: 25%;             
+        color: var(--black-background-color);
+        background-color: var(--main-background-color);
+        box-sizing: border-box;    
+        display: flex;
+        flex-direction: column;     
+        align-items: center;        
+        margin: 1%;                 
+        font-size: 12px;
+        padding-bottom: 10%;
+    }
+
+    #pfs-h h2 {
+        color:black;
+        font-size:54px;
+    }
+    
+    #pfs-h p {
+        color:black;
+        text-align: center;
+        width:50%;
+        margin-left:25%;
+    }
+
+    #take-next {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #ttns img {
+        width:40% ;
+        position:relative;
+        left:300px;
+        top:-10px;   
+    }
+
+    #text-column {
+        text-align: center;
+        width:95%
+    }
+
+    #take-next2 {
+        width:50%;
+        position: relative;
+        left:10%;
+        text-align: left;
+        padding-top:8%;   
+    }
+
+    #college-part {
+        width:60%;
+        margin-left:25%;
+    }
+}

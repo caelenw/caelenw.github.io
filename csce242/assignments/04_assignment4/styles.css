@@ -373,11 +373,11 @@ footer {
 #imgandicon {
     display:flex;
     flex-direction: row;
-    padding-left:25%;
+    padding-left:5%;
     align-items: center;
     width:65%;
     background-color: var(--carolina-background-color);
-    gap:50%;
+    gap:45%;
 }
 
 #edp {

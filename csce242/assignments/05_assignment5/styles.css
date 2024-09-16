@@ -1,0 +1,188 @@
+:root {
+  --main-background-coloer:red;
+  --white-background-color:white;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  max-width: 100%;
+  height: 1200px;
+}
+
+header {
+border: 2px solid black;  
+}
+#content {
+  justify-content: center;
+  padding: 3px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.button {
+  text-align: center;
+  width:100%;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 3%; 
+  padding:0;
+  margin:0;
+}
+#sec-1 {
+  width:100%;
+}
+
+.full-button {
+  width: 100%; 
+  margin-bottom:5%;
+}
+
+#section {
+  align-items: center;
+}
+
+#sec-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-background-color);
+  border: none;
+  height: 100%;
+  max-width: 100%;
+  margin-right:10px;
+}
+
+h1 {
+  color:var(--main-background-coloer) ;
+  text-align: center;
+}
+
+h2 {
+  color: var(--main-background-coloer);
+  text-align: center;
+  font-size: 20px;
+}
+
+p {
+  color: #528691;
+}
+
+div {
+  background-color: white;
+}
+#img-random {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto; 
+}
+#sec-3-container {
+  position: relative;
+  width: 100% auto;
+  height: 200px;
+  overflow: hidden; 
+}
+
+#movableSquare {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  transition: left 0.5s; 
+  width: 200px; 
+  height: 200px; 
+}
+
+#slider {
+  width: 100%; 
+}
+
+h4 {
+  justify-content: center;
+  text-align: center;
+  color: var(--main-background-coloer);
+  margin-top:50%;
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 600px) {
+  #content {
+      width: 100%;
+      margin: auto;
+      height:100%;
+      margin-right:1%;
+  }
+  #counterButton.one.full-button {
+    text-align: left;
+    height:100%;
+    width:100%;
+  }
+  
+  .columns {
+      flex:1;
+      flex-direction: row;
+      width:100%;
+      height:100%;
+      gap:2%;
+  }
+  .full-button {
+    height:50%;
+    width:100%;
+    justify-content: center;
+  }
+  #sec-1 {
+    padding:0;
+    margin:0;
+  }
+  .columns > * {
+      padding: 8%;
+      margin: 1%;
+      flex: 1; 
+  }
+}
+@media only screen and (max-width: 600px) {
+  #content {
+    
+      width: 100%;
+      height:100%;
+      margin: auto;
+  }
+
+  .columns {
+      display: flex;
+      flex-direction: row;
+      width:100%;
+      gap:5%;
+  }
+
+  .columns > * {
+      padding: 8%;
+      margin: 1%;
+      flex: 1; 
+  }
+  #sec-1 {
+    height:600px;
+  }
+  .sec-1 {
+    margin-right:15px;
+
+  }
+  #movableSquare {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.5s; 
+  }
+  .full-button {
+    height:90%;
+    
+
+  }
+  #slider {
+    width: 100%;
+    
+}
+}

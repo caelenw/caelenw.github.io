@@ -1,82 +1,123 @@
-/* Structure */
 body {
-    background:url(images/lovely-otter-animal-0mbwsgo5zqa7ltf2.jpg);
+    background-color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-#content {
-    width: 90%;
-    margin:auto;
-    background:rgb(255,255,255,0.8); 
-    border-radius:5px;
-}
-#species section {
-    background:red;
-    padding:5px;
-    margin:5px;
-}
-#main-aside {
-    background-color:blue;
-}
-#new section {
-    background:lightcoral;
-}
-img {
-    max-width:100%;
-}
-#main-header {
-    background-color: #E7CAB2;
-    border-radius:5px;
-}
-#main-footer {
-    background-color: #E7CAB2;
-}
-/*Navigation*/
-#main-nav li {
-    list-style-type: none;
-    border-bottom: 1px solid violet;
+    text-align: center;
     
 }
-#main-nav ul {
-    padding-left:0;
+h1 {
+    font-size:30px 
 }
-#main-nav a {
-    text-decoration: none;
-    padding:5px;
-    background:black;
-    color:Green;
-    display:block;
+h4 {
+    text-align: left;
+    padding-left: 10px;
 }
-/* Typography */
-#main-footer p {
-    text-align: center;;
+h3 {
+    font-size:25px;
+}
+div {
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+    border-radius: 25px;
+    text-align: center;
+}
+#main-project {
+    display:flex;
+    flex-direction: row;
 }
 
-/* Media Queries */
-/* Apply to 600px and larger (size) */
-@media only screen and (min-width:600px) {
-    .columns{
-        display:flex;
+#main-page-holder {
+    width: auto;
+}
+
+
+
+img {
+    max-width: 200px; 
+    height: 200px;   
+    display: block;
+    margin: 0 auto;  
+}
+
+
+li {
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+}
+
+@media only screen and (min-width: 600px) {
+    .columns {
+        display: flex;
+        gap: 100px;
     }
     .one {
-        flex:1;
+        flex: 1;
     }
     .two {
-        flex:2;
+        flex: 2;
     }
     .three {
-        flex:3;
-
+        flex: 3;
     }
     .four {
         flex:4;
-    }
-    #main-nav li {
-        flex:1;
-        text-align: center;
+
     }
 }
-/* Apply to 768px and larger (size) */
-@media only screen and (min-width:768px) {
 
+@media only screen and (max-width: 768px) {
+    .columns {
+        flex-direction: column; 
+        gap: 20px;
+    }
+}
+
+#main-footer {
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+
+.main-page-holder {
+    background-color: #dae3f3; 
+    padding: 30px; 
+    margin: 30px auto; 
+    border-radius: 15px;
+    width: 100%; 
+    max-width: 1200px; 
+    height: auto; 
+    color: black;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.main-page-holder a {
+    text-decoration: none;
+}
+
+.main-page-holder p {
+    color: black;
+    max-width: 300px; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    gap: 100px; 
+}
+
+#images {
+    max-width: 300px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
 }

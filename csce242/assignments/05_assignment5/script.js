@@ -16,25 +16,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const slider = document.getElementById('slider');
-    const movableSquare = document.getElementById('movableSquare');
+    const movableimg = document.getElementById('movableimg');
     const container = document.getElementById('sec-3-container');
 
-    if (slider && movableSquare && container) {
-        function updateMovableSquare() {
+    if (slider && movableimg && container) {
+        function updateMovableimg() {
             const sliderValue = slider.value;
-            const maxMove = container.offsetWidth - movableSquare.offsetWidth; 
+            const maxMove = container.offsetWidth - movableimg.offsetWidth; 
             const newLeft = maxMove - (sliderValue / 100) * maxMove; 
-            movableSquare.style.left = `${newLeft}px`; 
+            movableimg.style.left = `${newLeft}px`; 
         }
 
         function setInitialSliderValue() {
                 slider.value = 0; 
-                updateMovableSquare(); 
+                updateMovableimg(); 
         }
 
         setInitialSliderValue();
 
-        slider.addEventListener('input', updateMovableSquare);
+        slider.addEventListener('input', updateMovableimg);
 
         window.addEventListener('resize', () => {
             setInitialSliderValue(); 

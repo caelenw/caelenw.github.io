@@ -87,7 +87,7 @@ div {
   overflow: hidden; 
 }
 
-#movableSquare {
+#movableimg {
   position: absolute;
   top: 0;
   left: 0; 
@@ -170,7 +170,7 @@ h4 {
     margin-right:15px;
 
   }
-  #movableSquare {
+  #movableimg {
     position: absolute;
     top: 0;
     left: 0;

@@ -4,41 +4,34 @@
     <title>HTML & CSS PROJECT</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
-</head>
 <body>
     <div class="main">
         <header>
             <div id="h-title">
-                <h1>Budget Within</h1>
+                <h1 id="app-name">Budget Within</h1>
+            </div>
+            <div>
+                <div id="click">
+                    <img src="images/icons8-drop-down-50.png">
+                </div>
+                <nav id="main-navigation">
+                    <a href="index.html">Home</a>
+                    <a href="upload.html">Upload</a>
+                    <a href="#">Transaction</a>
+                    <a href="aboutUs.html">About us</a>
+                    <a href="admin.html">Admin</a>
+                    <span></span>
+                  </nav>
             </div>
             <div id="h-ul">
                 <div id="h-user">
-                    <button><img src="images/icons8-username-50.png" alt="Username Icon"> Username </button>
+                    <button class="nav-user"><img src="images/icons8-username-50.png"> Username </button>
                 </div>
                 <div id="h-logout">
-                    <button><img src="images/icons8-user-24.png" alt="Logout Icon"> Logout </button>                    
+                    <button class="nav-user"><img src="images/icons8-user-24.png">Logout </button>                    
                 </div>
             </div>
         </header>
-        <div id="main-nav-bar">
-            <ul>
-                <li>
-                    <a href="index.html"><img src="images/icons8-home-64.png" alt="Home Icon"><br>Home</a>
-                </li>
-                <li>
-                    <a href="upload.html"><img src="images/icons8-upload-25.png" alt="Upload Icon"><br>Upload</a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/icons8-transaction-80.png" alt="Transaction Icon"><br>Transaction</a>
-                </li>
-                <li>
-                    <a href="aboutUs.html"><img src="images/icons8-about-us-24.png" alt="About Us Icon"><br>About Us</a>
-                </li>
-                <li>
-                    <a href="admin.html"><img src="images/icons8-admin-50.png" alt="Admin Icon"><br>Admin</a>
-                </li>
-            </ul>
-        </div>
         <section class="home-bb">
             <h2>View Transactions by Filter</h2>
             <table>
@@ -172,5 +165,6 @@
             </table>
         </section>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

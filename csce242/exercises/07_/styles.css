@@ -20,20 +20,7 @@ body {
     background-color: honeydew;
   }
   
-  #main-footer {
-    padding: 10px;
-    margin: auto;
-    background-color: bisque;
-  }
-  #ball {
-    width:55px;
-    height:55px;
-    border: 1px solid gray;
-    background-color: black;
-    border-radius: 55px;
-    position:relative;
-    
-  }
+  
   
   
   /* Main Navigation */
@@ -65,13 +52,6 @@ body {
     border-bottom: 1px solid black;
   }
 
-  #funds-thermometer {
-    border:1px solid gray;
-    width:200px;
-    height:400px;
-    /*background:linear-gradient(45deg, red 0% 15%, orange 15% 30%, yellow 30% 50%, green 50% 75%, blue 75% 100%); */
-    background:linear-gradient(0deg, red 0% (--funds), white (--funds) 100%);
-  }
   /* Typography */
   
   body {

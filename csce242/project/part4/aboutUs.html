@@ -8,36 +8,30 @@
     <div class="main">
         <header>
             <div id="h-title">
-                <h1>Budget Within</h1>
+                <h1 id="app-name">Budget Within</h1>
+            </div>
+            <div>
+                <div id="click">
+                    <img src="images/icons8-drop-down-50.png">
+                </div>
+                <nav id="main-navigation">
+                    <a href="index.html">Home</a>
+                    <a href="upload.html">Upload</a>
+                    <a href="transaction.html">Transaction</a>
+                    <a href="#">About us</a>
+                    <a href="admin.html">Admin</a>
+                    <span></span>
+                  </nav>
             </div>
             <div id="h-ul">
                 <div id="h-user">
-                    <button><img src="images/icons8-username-50.png"> Username </button>
+                    <button class="nav-user"><img src="images/icons8-username-50.png"> Username </button>
                 </div>
                 <div id="h-logout">
-                    <button><img src="images/icons8-user-24.png">Logout </button>                    
+                    <button class="nav-user"><img src="images/icons8-user-24.png">Logout </button>                    
                 </div>
             </div>
         </header>
-        <div id="main-nav-bar">
-            <ul>
-                <li>
-                    <a href="index.html"><img src="images/icons8-home-64.png"><br>Home</a>
-                </li>
-                <li>
-                    <a href="upload.html"><img src="images/icons8-upload-25.png"><br>Upload</a>
-                </li>
-                <li>
-                    <a href="transaction.html"><img src="images/icons8-transaction-80.png"><br>Transaction</a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/icons8-about-us-24.png"><br>About Us</a>
-                </li>
-                <li>
-                    <a href="admin.html"><img src="images/icons8-admin-50.png"><br>Admin</a>
-                </li>
-            </ul>
-        </div>
         <section class="home-bb">
             <div id="hold">
                 <div id="bwg">
@@ -62,22 +56,22 @@
                         <h2>Meet The Team</h2>
                     </div>
                     <div id="mtt-content">
-                        <div id="p-1">
+                        <div class="home-section" id="p-1">
                             <h3>Josh</h3>
                             <img src="images/images (4).jpeg">
                             <P>I’m dedicated to helping individuals navigate their financial journeys at Budget Within. I believe that understanding your finances is key to achieving your goals, and I focus on creating intuitive tools that empower our users to visualize their spending and make informed decisions. </P>
                         </div>
-                        <div id="p-2">
+                        <div class="home-section" id="p-2">
                             <h3>Kyle</h3>
                             <img src="images/images (3).jpeg">
                             <P> As a finance enthusiast at Budget Within, I’m dedicated to helping people understand and manage their money better. My background in financial planning allows me to provide valuable insights that simplify budgeting and empower users to reach their financial goals.</P>
                         </div>
-                        <div id="p-3">
+                        <div class="home-section" id="p-3">
                             <h3>Craig</h3>
                             <img src="images/images (2).jpeg">
                             <P> I’m thrilled to be part of the Budget Within team, where I focus on creating user-friendly features that make financial management easier for everyone. With a background in software development and a keen interest in personal finance, I’m passionate about building tools that empower users to take charge of their spending.</P>
                         </div>
-                        <div id="p-4">
+                        <div class="home-section" id="p-4">
                             <h3>Katie</h3>
                             <img src="images/images (1).jpeg">
                             <p>I’m excited to be part of the Budget Within team, where my focus is on enhancing user experience and ensuring that our platform is intuitive and engaging. With a background in user experience design, I’m passionate about creating seamless interactions that empower users to manage their finances with ease.</p>
@@ -87,5 +81,6 @@
             </div>
         </section>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

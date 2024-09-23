@@ -26,6 +26,7 @@ background-color: var(--main-background-coloer);
 
 .button {
   text-align: center;
+  border: 0px solid red;
   width:100%;
 }
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 8 - Conditions</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header id="main-header">
+        <h1>Assignment 6</h1>
+        <nav id="main-nav">
+            <div id="toggle-nav" onclick="toggleMenu()">
+                 ↓
+            </div>
+            <ul id="nav-items" class="columns hidden-small">
+                <li id="1"><a id="exercise1" href="#">Exercise 1    </a></li>
+                <li id="2"><a id="exercise2" href="#">Exercise 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- For exercise 1 with the sliders -->
+    <div id="slider"> 
+        <h1>Color Slider</h1>
+        <input type="range" id="colorSlider" min="0" max="255" value="0">
+        <div id="message"></div>
+    </div>
+    <!-- For exercise 2 with the image chooser -->
+    <div class="pic-hold">
+        <div id="imgContainer">
+            <div id="image-chooser"> 
+                <h1>Exercise 2: Picture Chooser</h1>
+                <div id="button-container">
+                    <button onclick="showImage('small')">Small Image</button>
+                    <button onclick="showImage('medium')">Medium Image</button>
+                    <button onclick="showImage('large')">Large Image</button>
+                </div>
+                <div id="image-container">
+                    <img id="chosen-image" src="" alt="Chosen image will appear here" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML & CSS PROJECT</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div id="h-title">
+                <h1>Budget Within</h1>
+            </div>
+            <div id="h-ul">
+                <div id="h-user">
+                    <button><img src="images/icons8-username-50.png" alt="Username Icon"> Username </button>
+                </div>
+                <div id="h-logout">
+                    <button><img src="images/icons8-user-24.png" alt="Logout Icon"> Logout </button>                    
+                </div>
+            </div>
+        </header>
+        <div id="main-nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="images/icons8-home-64.png" alt="Home Icon"><br>Home</a>
+                </li>
+                <li>
+                    <a href="upload.html"><img src="images/icons8-upload-25.png" alt="Upload Icon"><br>Upload</a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons8-transaction-80.png" alt="Transaction Icon"><br>Transaction</a>
+                </li>
+                <li>
+                    <a href="aboutUs.html"><img src="images/icons8-about-us-24.png" alt="About Us Icon"><br>About Us</a>
+                </li>
+                <li>
+                    <a href="admin.html"><img src="images/icons8-admin-50.png" alt="Admin Icon"><br>Admin</a>
+                </li>
+            </ul>
+        </div>
+        <section class="home-bb">
+            <h2>View Transactions by Filter</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <select id="t-dropdown-menu">
+                                <option value="default" disabled selected>Select Category of Transaction</option>
+                                <option value="Food">Food</option>
+                                <option value="Health">Health</option>
+                                <option value="Savings">Savings</option>
+                                <option value="Rent">Rent</option>
+                                <option value="Pets">Pets</option>
+                                <option value="Insurance">Insurance</option>
+                                <option value="Kids">Kids</option>
+                                <option value="Debt">Debt</option>
+                                <option value="Rent/House">Rent/house</option>
+                                <option value="Savings">Savings</option>
+                                <option value="Car">Car</option>
+                                <option value="Other">Other</option>
+                            </select> 
+                        </th>
+                        <th>
+                            <select id="t-dropdown-menu">
+                                <option value="Status" disabled selected>Account Used In Transaction</option>
+                                <option value="Checking">Checking</option>    
+                                <option value="Credit">Credit</option>  
+                                <option value="Savings">Savings</option>  
+                                <option value="Other">Other</option>  
+                            </select>
+                        </th>
+                        <th>
+                            <select id="t-dropdown-menu">
+                                <option value="Status" disabled selected>Status of Transaction</option>
+                                <option value="Paid">Paid</option>    
+                                <option value="Pending">Pending</option>  
+                                <option value="Completed">Completed</option>  
+                            </select>
+                        </th>
+                        <th>
+                            <select id="t-dropdown-menu">
+                                <option value="Price" disabled selected>Price of Transaction</option>
+                                <option value="Paid">$0.00 - $100.00</option>    
+                                <option value="Pending">$101.00 - $250.00</option>  
+                                <option value="Completed">$251.00 - $500.00</option>  
+                                <option value="Completed">$501.00 +</option>  
+                            </select>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rent</td>
+                        <td>Checking</td>
+                        <td>Completed</td>
+                        <td>-2,300</td>
+                    </tr>
+                    <tr>
+                        <td>Light bill</td>
+                        <td>Checking</td>
+                        <td>Completed</td>
+                        <td>-$89.29</td>
+                    </tr>
+                    <tr>
+                        <td>Power</td>
+                        <td>Credit Card</td>
+                        <td>Un-paid</td>
+                        <td>-$253.33</td>
+                    </tr>
+                    <tr>
+                        <td>Gas</td>
+                        <td>Credit Card</td>
+                        <td>Un-paid</td>
+                        <td>-$62.84</td>
+                    </tr>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>Visa</td>
+                        <td>Completed</td>
+                        <td>-$165.44</td>
+                    </tr>
+                    <tr>
+                        <td>Movies</td>
+                        <td>Master Card</td>
+                        <td>Un-paid</td>
+                        <td>-$32.95</td>
+                    </tr>
+                    <tr>
+                        <td>Investment</td>
+                        <td>Savings</td>
+                        <td>Completed</td>
+                        <td>-$231.24</td>
+                    </tr>
+                    <tr>
+                        <td>Pay-Stub</td>
+                        <td>Checking Account</td>
+                        <td>Un-paid</td>
+                        <td>+$2,359.22</td>
+                    </tr>
+                    <tr>
+                        <td>Venmo</td>
+                        <td>Checking Account</td>
+                        <td>Completed</td>
+                        <td>+$88.50</td>
+                    </tr>
+                    <tr>
+                        <td>Netflix/Hulu</td>
+                        <td>Savings</td>
+                        <td>Completed</td>
+                        <td>-$10.99</td>
+                    </tr>
+                    <tr>
+                        <td>Shopping</td>
+                        <td>Checking Account</td>
+                        <td>Paid</td>
+                        <td>-$438.23</td>
+                    </tr>
+                    <tr>
+                        <td>Target</td>
+                        <td>Checking Account</td>
+                        <td>Un-paid</td>
+                        <td>-$103.22</td>
+                    </tr>
+                    <tr>
+                        <td>Lulu</td>
+                        <td>Credit Card</td>
+                        <td>Paid</td>
+                        <td>-$10.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

@@ -21,8 +21,8 @@ h4 {
 }
 
 h3 {
-    font-size: 55px auto;
-    text-wrap:wrap;
+    font-size: fit-content;
+    
 }
 
 div {

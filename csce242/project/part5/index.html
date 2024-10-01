@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML & CSS PROJECT</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div id="h-title">
+                <h1 id="app-name">Budget Within</h1>
+            </div>
+            <div>
+                
+                <nav id="main-navigation">
+                    <div class="dropdown">
+                        <a href="#" class="active">Home</a>
+                        <div class="dropdown-content">
+                            <a href=#monthly-expense-overview>Yearly Spending</a>
+                            <a href="#expense-details">Pie Chart Spending</a>
+                            <a href="#bar-chart">Bar Graph Spending</a>
+                        </div>
+                    </div>
+                    <a href="upload.html">Upload</a>
+                    <a href="transaction.html">Transaction</a>
+                    <a href="aboutUs.html">About us</a>
+                    <a href="admin.html">Admin</a>
+                    <span></span>
+                  </nav>
+            </div>
+           
+            <div id="h-ul">
+                <div id="h-user">
+                    <button class="nav-user"><img src="images/icons8-username-50.png" alt="Settings"></button>
+                </div>
+                <div id="h-logout">
+                    <button class="nav-user"><img src="images/icons8-user-24.png" alt="Logout"></button>
+                </div>
+            </div>
+        </header>
+        <!-- Body containing the divs holding the four sections -->  
+         
+        <div class="home-dashboard">
+            <div class="monthly-expense-section" id="monthly-expense-overview">
+                <div class="expense-title">
+                    <h1>Current Monthly Amount Spent</h1>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="monthly-expense-progress" style="width: 44%;"></div>
+                </div>
+                <div class="progress-text" id="monthly-expense-text">44%</div>
+            </div>
+            <div id="middle">
+                <div id="title">
+                    <h1>Current Monthly Spending Distribution</h1>
+                </div>
+            
+            <div class="expense-categories-section" id="expense-details">
+                <div id="spending-pie-chart">
+                    <div class="pie-chart"></div>
+                </div>
+                <div class="category-info">
+                    <div class="spending-category">
+                        <h2 class="category-title">Rent:</h2>
+                        <input type="text" id="rent-percentage" value="20%" readonly />
+                    </div>
+                    <div class="spending-category">
+                        <h2 class="category-title">Food:</h2>
+                        <input type="text" id="food-percentage" value="15%" readonly />
+                    </div>
+                    <div class="spending-category">
+                        <h2 class="category-title">Car Insurance:</h2>
+                        <input type="text" id="car-insurance-percentage" value="10%" readonly />
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div> 
+        <div class="chart-container" id="bar-chart">
+            <h2>Monthly Spending Bar Chart by Categories</h2>
+            <div class="bar-chart">
+                <div class="bar" style="height: 300px;">
+                    <span class="label">Rent</span>
+                    <span class="value">$800</span>
+                </div>
+                <div class="bar" style="height: 200px;">
+                    <span class="label">Food</span>
+                    <span class="value">$500</span>
+                </div>
+                <div class="bar" style="height: 250px;">
+                    <span class="label">Utilities</span>
+                    <span class="value">$600</span>
+                </div>
+                <div class="bar" style="height: 150px;">
+                    <span class="label">Transport</span>
+                    <span class="value">$350</span>
+                </div>
+                <div class="bar" style="height: 100px;">
+                    <span class="label">Entertainment</span>
+                    <span class="value">$250</span>
+                </div>
+            </div>
+        </div>
+        
+    <script src="scripts.js"></script>
+</body>
+</html>

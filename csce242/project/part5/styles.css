@@ -1,0 +1,268 @@
+:root {
+    --header-color: #B2ABF2;
+    --body-color: #FFEDE1;
+    --black-color: #000000;
+    --white-color: white;
+    --home-bb-color: #B2ABF2;
+    --home-color: #EBEBD3;
+    --content-color: #3BF4FB;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full height of viewport */
+    justify-content: center; /* Center content vertically */
+    font-family: 'Times New Roman', Times, serif;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    background-color: var(--home-color);
+}
+
+header {
+    display: flex; /* Enables flexbox properties */
+    flex-direction: column; /* Align children in a column */
+    align-items: center; /* Center header contents horizontally */
+    text-align: center;
+    width: 100%; /* Ensure header takes full width */
+}
+
+#main-navigation {
+    display: flex;
+    background-color: var(--header-color);
+    justify-content: space-around; /* Space items evenly */
+    align-items: center; /* Align items vertically */
+    text-align: center;
+    width: 50vw; /* Full width of the screen */
+    padding: 5px 0; /* Optional: Add padding for better spacing */
+    margin: 0; /* Remove margin to fit edge to edge */
+}
+
+#main-navigation a:hover {
+    background: linear-gradient(to right, rgb(47, 242, 235), rgb(153, 208, 153), blue, white);
+    color: black; /* Optional: Change text color on hover for better visibility */
+    border: 3px solid var(--black-color);
+    box-shadow: 0 0 25px rgba(47, 242, 235, 0.7), 0 0 25px rgba(153, 208, 153, 0.7); /* Glowing effect */
+}
+
+#main-navigation a {
+    text-decoration: none;
+    color: white;
+    flex: 1; /* Ensure each link takes equal space */
+    padding: 10px; /* Add padding for better spacing */
+    text-align: center; /* Center text within the links */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+/* Dropdown container */
+.dropdown {
+    position: relative; /* Position relative for absolute positioning of dropdown content */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none; /* Hide the dropdown initially */
+    position: absolute; /* Position it below the Home link */
+    background-color: black; /* Background color of the dropdown */
+    min-width: 160px; /* Set a minimum width */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    z-index: 1; /* Make sure dropdown appears above other elements */
+}
+
+/* Show the dropdown when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Style links inside the dropdown */
+.dropdown-content a {
+    color: black; /* Link color */
+    padding: 12px 16px; /* Padding for the links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make links block level */
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Change background color on hover */
+}
+
+
+
+/* Icon images on top right for large screen */
+#h-ul {
+    display: flex;
+    margin: 1px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+#h-ul img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Pie chart and pie slices styling */
+/* Pie chart and pie slices styling */
+#expense-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom:3%;
+    background-color: var(--header-color);
+}
+#middle {
+    background-color: var(--home-bb-color);
+}
+#spending-pie-chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pie-chart {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #FF6384 0% 40%,   /* Red */
+        #36A2EB 40% 80%,  /* Blue */
+        #FFCE56 80% 100%   /* Yellow */
+    );
+    margin-top:5%;
+    margin-bottom:50px;
+}
+#title {
+    align-items: center;
+    text-align: center;
+    background-color: var(--home-bb-color);
+}
+.category-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically for better readability */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center content vertically */
+    max-width: 100%; /* Prevent exceeding the width of the home-cms */
+    margin-top:5%;
+    margin-bottom:5%;
+    gap: 10px; /* Add space between items */
+}
+
+.spending-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Space between title and input */
+    width: 100%; /* Take full width of the info section */
+    max-width: 300px; /* Optional: limit width for better layout */
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 50px; /* Set a fixed width for inputs */
+    text-align: center; /* Center text inside input */
+    border: 1px solid #ccc; /* Add border for better visibility */
+}
+
+/*for progress bar */
+#expense-categories-section {
+    background-color: var(--home-bb-color);
+}
+.monthly-expense-section {
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    width:95%;
+    height:200px;
+    padding:2%;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0; /* This will be set via JavaScript */
+    background-color: var(--home-bb-color);
+    transition: width 0.5s;
+}
+
+.progress-text {
+    font-size: 24px;
+}
+#home-dashboard {
+    display:flex;
+    justify-content: center;
+}
+
+
+.chart-container {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top:5%;
+    margin-bottom:10%;
+    
+}
+
+.bar-chart {
+    display: flex;
+    flex-direction: row; /* Keep bars in a row */
+    align-items: flex-end; /* Align bars at the bottom */
+    justify-content: center; /* Align bars to the left */
+    height: 400px; /* Height of the chart */
+    background-color: var(--home-color); /* Background color of the chart */
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+}
+
+.bar {
+    width: 15%; /* Width of each bar; adjust as needed */
+    background-color: var(--home-bb-color); /* Bar color */
+    margin: 0 5px; /* Spacing between bars */
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    top: -40px; /* Position the label above the bar */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+
+.value {
+    position: absolute;
+    bottom: 80%; /* Position the value above the bar */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: white; /* Value color */
+}
+
+@media (max-width: 600px) {
+    .home-section {
+        flex: 1 1 100%; /* Stacks sections on smaller screens */
+    }
+    #expense-details {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #main-navigation {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: auto;
+    }
+}

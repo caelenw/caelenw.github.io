@@ -735,8 +735,6 @@ body.dark-mode #dark {
     color:var(--white-color);
     background-color: var(--black-color);
 }
-
-dar
 #table-by-cat {
     width: 100%;
     display: flex;

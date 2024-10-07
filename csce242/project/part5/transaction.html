@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML & CSS PROJECT</title>
+    <title>Budget Within</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div class="main">
         <header>
             <div id="h-title">
-                <h1 id="app-name">Budget Within</h1>
+                <img src="images/budget-within-high-resolution-logo-transparent.png">
+                <label class="toggle">
+                    <label>Dark Mode</label>
+                    <input type="checkbox" id="toggle">
+                    <span class="slider"></span>
+                </label>
             </div>
             <div>
-                <div id="click">
-                    <img src="images/icons8-drop-down-50.png">
-                </div>
-                <nav id="main-navigation">
-                    <a href="index.html">Home</a>
-                    <a href="upload.html">Upload</a>
-                    <a href="#" class="active">Transaction</a>
-                    <a href="aboutUs.html">About us</a>
-                    <a href="admin.html">Admin</a>
-                    <span></span>
-                  </nav>
+                <nav id="main-nav">
+                    <div id="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="columns hidden-small">
+                        <li><a href="index.html"><img src="images/home.png" alt="Home"><span class="nav-text">Home</span></a></li>
+                        <li><a href="upload.html"><img src="images/upload.png" alt="upload"><span class="nav-text">Upload</span></a></li>
+                        <li><a href="#"><img src="images/trans.png" alt="transaction"><span class="nav-text">Transaction</span></a></li>
+                        <li><a href="aboutUs.html"><img src="images/aboutUs.png" alt="About Us"><span class="nav-text">About Us</span></a></li>
+                        <li><a href="admin.html"><img src="images/admin.png" alt="admin"><span class="nav-text">Admin</span></a></li>
+                      </ul>
+                      
+                </nav>
             </div>
             <div id="h-ul">
                 <div id="h-user">
-                    <button class="nav-user"><img src="images/icons8-username-50.png"> Username </button>
+                    <button class="nav-user"><img src="images/icons8-username-50.png" alt="Settings"></button>
                 </div>
                 <div id="h-logout">
-                    <button class="nav-user"><img src="images/icons8-user-24.png">Logout </button>                    
+                    <button class="nav-user"><img src="images/icons8-user-24.png" alt="Logout"></button>
                 </div>
             </div>
         </header>
         <section class="home-bb">
-            <h2>View Transactions by Filter</h2>
+            <h2 id="dark">View Transactions by Filter</h2>
             <table>
                 <thead>
                     <tr>
@@ -166,5 +175,8 @@
         </section>
     </div>
     <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; Caelenw 2024</p>
+    </footer>
 </body>
 </html>

@@ -1,109 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML & CSS PROJECT</title>
+    <title>Budget Within</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="main">
-        <header>
-            <div id="h-title">
-                <h1 id="app-name">Budget Within</h1>
-            </div>
-            <div>
-                <div id="click">
-                    <img src="images/icons8-drop-down-50.png">
+    <header>
+        <div id="h-title">
+            <img src="images/budget-within-high-resolution-logo-transparent.png">
+            <label class="toggle">
+                <label>Dark Mode</label>
+                <input type="checkbox" id="toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-                <nav id="main-navigation">
-                    <a href="index.html">Home</a>
-                    <a href="upload.html">Upload</a>
-                    <a href="transaction.html">Transaction</a>
-                    <a href="aboutUs.html">About us</a>
-                    <a href="#" class="active">Admin</a>
-                    <span></span>
-                  </nav>
+                <ul id="nav-items" class="columns hidden-small">
+                    <li><a href="index.html"><img src="images/home.png" alt="Home"><span class="nav-text">Home</span></a></li>
+                    <li><a href="upload.html"><img src="images/upload.png" alt="upload"><span class="nav-text">Upload</span></a></li>
+                    <li><a href="transaction.html"><img src="images/trans.png" alt="transaction"><span class="nav-text">Transaction</span></a></li>
+                    <li><a href="aboutUs.html"><img src="images/aboutUs.png" alt="About Us"><span class="nav-text">About Us</span></a></li>
+                    <li><a href="#"><img src="images/admin.png" alt="admin"><span class="nav-text">Admin</span></a></li>
+                  </ul>
+            </nav>
+        </div>
+        <div id="h-ul">
+            <div id="h-user">
+                <button class="nav-user"><img src="images/icons8-username-50.png" alt="Settings"></button>
             </div>
-            <div id="h-ul">
-                <div id="h-user">
-                    <button class="nav-user"><img src="images/icons8-username-50.png"> Username </button>
-                </div>
-                <div id="h-logout">
-                    <button class="nav-user"><img src="images/icons8-user-24.png">Logout </button>                    
-                </div>
+            <div id="h-logout">
+                <button class="nav-user"><img src="images/icons8-user-24.png" alt="Logout"></button>
             </div>
+        </div>
+    </header>
         </header>
-        <section class="home-bbb" id="admin-small">
-            <div id="hold">
-                <div id="main-admin-holder">
-                    <div id="admin-left">
-                        <div id="name">
-                            <h2>Name:</h2>
-                            <h2>Jack</h2>
-                        </div>
-                        <div id="name">
-                            <h2>Last Name:</h2>
-                            <h2>Windthruff</h2>
-                        </div>
-                        <div id="name">
-                            <h2>Username:</h2>
-                            <h2>jack.w3321</h2>
-                        </div>
-                        <div id="name">
-                            <h2>Password:</h2>
-                            <h2>**********</h2>
-                        </div>
-                        <div id="name">
-                            <h2>Email:</h2>
-                            <h2>Jackwind@aol.com</h2>
-                        </div>
-                        <div id="name">
-                            <h2>Phone #:</h2>
-                            <h2>(864)-555-5555</h2>
-                        </div>
-                    </div>
-                    <div id="admin-middle">
-                        <img src="images/savings.png" alt="">
-                    </div>
-                    <div id="admin-right">
-                        <div id="admin-acct">
-                            <table border="3">
-                                <tr>
-                                    <td>Account #</td>
-                                    <td>Routing #</td>
-                                    <td>Type</td>
-                                    <td>Bank</td>
-                                </tr>
-                                <tr>
-                                    <td>9562458745125456</td>
-                                    <td>845624532</td>
-                                    <td>Checking</td>
-                                    <td>Wells Fargo</td>
-                                </tr>
-                                <tr>
-                                    <td>45151234654581347</td>
-                                    <td>515615131</td>
-                                    <td>Credit</td>
-                                    <td>BB&T</td>
-                                </tr>
-                                <tr>
-                                    <td>65411324894665421</td>
-                                    <td>516516518</td>
-                                    <td>Credit</td>
-                                    <td>American Express</td>
-                                </tr>
-                                <tr>
-                                    <td>51655642318948946</td>
-                                    <td>588852147</td>
-                                    <td>Checking</td>
-                                    <td>Capital One</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+        <div id="userInfo">
+            <div id="name">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
             </div>
-        </section>
-    </div>
+            <div id="img-admin">
+                <img src="images/savings.png">
+            </div>
+            <div id="admin-acct">
+                <table id="admin-table" border="3">
+                    <tr>
+                        <td>Account #</td>
+                        <td>Routing #</td>
+                        <td>Type</td>
+                        <td>Bank</td>
+                    </tr>
+                    <tr>
+                        <td>9562458745125456</td>
+                        <td>845624532</td>
+                        <td>Checking</td>
+                        <td>Wells Fargo</td>
+                    </tr>
+                    <tr>
+                        <td>45151234654581347</td>
+                        <td>515615131</td>
+                        <td>Credit</td>
+                        <td>BB&T</td>
+                    </tr>
+                    <tr>
+                        <td>65411324894665421</td>
+                        <td>516516518</td>
+                        <td>Credit</td>
+                        <td>American Express</td>
+                    </tr>
+                    <tr>
+                        <td>51655642318948946</td>
+                        <td>588852147</td>
+                        <td>Checking</td>
+                        <td>Capital One</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+     
     <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; Caelenw 2024</p>
+    </footer>
 </body>
 </html>

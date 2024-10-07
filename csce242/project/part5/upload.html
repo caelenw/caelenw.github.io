@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML & CSS PROJECT</title>
+    <title>Budget Within</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div class="main">
         <header>
             <div id="h-title">
-                <h1 id="app-name">Budget Within</h1>
+                <img src="images/budget-within-high-resolution-logo-transparent.png">
+                <label class="toggle">
+                    <label>Dark Mode</label>
+                    <input type="checkbox" id="toggle">
+                    <span class="slider"></span>
+                </label>
             </div>
             <div>
-                
-                <nav id="main-navigation">
-                    <div class="dropdown">
-                        <a href="index.html" class="active">Home</a>
-                        <div class="dropdown-content">
-                            <a href=>Yearly Spending</a>
-                            <a href="#expense-details">Pie Chart Spending</a>
-                            <a href="#bar-chart">Bar Graph Spending</a>
-                        </div>
+                <nav id="main-nav">
+                    <div id="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
-                    <a href="upload.html">Upload</a>
-                    <a href="transaction.html">Transaction</a>
-                    <a href="aboutUs.html">About us</a>
-                    <a href="admin.html">Admin</a>
-                    <span></span>
-                  </nav>
+                    <ul id="nav-items" class="columns hidden-small">
+                        <li><a href="index.html"><img src="images/home.png" alt="Home"><span class="nav-text">Home</span></a></li>
+                        <li><a href="#"><img src="images/upload.png" alt="upload"><span class="nav-text">Upload</span></a></li>
+                        <li><a href="transaction.html"><img src="images/trans.png" alt="transaction"><span class="nav-text">Transaction</span></a></li>
+                        <li><a href="aboutUs.html"><img src="images/aboutUs.png" alt="About Us"><span class="nav-text">About Us</span></a></li>
+                        <li><a href="admin.html"><img src="images/admin.png" alt="admin"><span class="nav-text">Admin</span></a></li>
+                      </ul>
+                      
+                </nav>
             </div>
-           
             <div id="h-ul">
                 <div id="h-user">
                     <button class="nav-user"><img src="images/icons8-username-50.png" alt="Settings"></button>
@@ -38,71 +41,77 @@
                 </div>
             </div>
         </header>
-        <div class="home-bb" id="upload">
-            <div id="dropdown"></div>
-            <div id="upload-bd">
-                <div id="hold">
-                    <div class="dropdown">
-                        <h2>Please Enter The Transaction Below:</h2>
-
-                        <select id="dropdown-menu">
-                            <option value="default" disabled selected>Select Category of Transaction</option>
-                            <option value="Food">Food</option>
-                            <option value="Health">Health</option>
-                            <option value="Savings">Savings</option>
-                            <option value="Rent">Rent</option>
-                            <option value="Pets">Pets</option>
-                            <option value="Insurance">Insurance</option>
-                            <option value="Kids">Kids</option>
-                            <option value="Debt">Debt</option>
-                            <option value="Rent/House">Rent/house</option>
-                            <option value="Savings">Savings</option>
-                            <option value="Car">Car</option>
-                            <option value="Other">Other</option>
-                        </select> 
-
-                        <select id="dropdown-menu">
-                            <option value="default" disabled selected>Type of Transaction</option>
-                            <option value="Deposit">Deposit</option>    
-                            <option value="Withdrawl">Withdrawl</option>    
-                        </select>
-
-                        <select id="dropdown-menu">
-                            <option value="Status" disabled selected>Status of Transaction</option>
-                            <option value="Paid">Paid</option>    
-                            <option value="Pending">Pending</option>  
-                            <option value="Completed">Completed</option>  
-                        </select>
-
-                        <select id="dropdown-menu">
-                            <option value="Status" disabled selected>Account Used In Transaction</option>
-                            <option value="Checking">Checking</option>    
-                            <option value="Credit">Credit</option>  
-                            <option value="Savings">Savings</option>  
-                            <option value="Other">Other</option>  
-                        </select>
-
-                        <select id="dropdown-menu">
-                            <option value="Status" disabled selected>Date of Transaction</option> 
-                        </select>
-
-                        <select id="dropdown-menu">
-                            <option value="Status" disabled selected>Price of Transaction</option>
-                        </select>
-
-                        <select id="dropdown-menu">
-                            <option value="Status" disabled selected>Additional Comments/Messages</option>
-                        </select>
-
-                        <select id="dropdown-menu">
-                            <option value="Status" disabled selected>Receipt</option>
-                        </select>
-                    </div>
+            <div id="upload-bottom" ">
+                <h2>Please Enter The Transaction Below:</h2>
+                <div id="cat">
+                    <select id="categories">
+                        <option value="default" disabled selected>Select Category of Transaction</option>
+                        <option value="Food">Food</option>
+                        <option value="Health">Health</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Pets">Pets</option>
+                        <option value="Insurance">Insurance</option>
+                        <option value="Kids">Kids</option>
+                        <option value="Debt">Debt</option>
+                        <option value="Rent/House">Rent/house</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Car">Car</option>
+                        <option value="Other">Other</option>
+                    </select> 
                 </div>
-                <button class="upload-button">Upload Transaction</button>
+                <div id="typeOfTrans">
+                    <select id="deposit">
+                        <option value="default" disabled selected>Type of Transaction</option>
+                        <option value="Deposit">Deposit</option>    
+                        <option value="Withdrawl">Withdrawl</option>    
+                    </select>
+                </div>
+                <div id="status">
+                    <select id="statusP">
+                        <option value="Status" disabled selected>Status of Transaction</option>
+                        <option value="Paid">Paid</option>    
+                        <option value="Pending">Pending</option>  
+                        <option value="Completed">Completed</option>  
+                    </select>
+                </div> 
+                <div id="account">
+                    <select id="acct">
+                        <option value="Status" disabled selected>Account Used In Transaction</option>
+                        <option value="Checking">Checking</option>    
+                        <option value="Credit">Credit</option>  
+                        <option value="Savings">Savings</option>  
+                        <option value="Other">Other</option>  
+                    </select>
+                </div>     
+                <div id ="date">
+                    <label for="TransDate:">Transaction Date:</label>
+                    <input type="datetime-local" id="transDate">
+                </div>
+                <div id="price">
+                    <label for="price">Price of Transaction:</label>
+                    <input type="number">
+                </div>
+                <div id="comments">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comment-txt" >
+                    </textarea>
+                </div>
+                <div id="recipt">
+                    <label for="recipts">Receipt:</label>
+                    <input type="file">
+                </div>
+                <div id="upload-btn">
+                    <button id="upload-button">Upload Transaction</button>
+                </div>
+
+
+                
             </div>
-        </div>
     </div>
     <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; Caelenw 2024</p>
+    </footer>
 </body>
 </html>

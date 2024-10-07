@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML & CSS PROJECT</title>
+    <title>Budget Within</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div class="main">
         <header>
             <div id="h-title">
-                <h1 id="app-name">Budget Within</h1>
+                <img src="images/budget-within-high-resolution-logo-transparent.png">
+                <label class="toggle">
+                    <label>Dark Mode</label>
+                    <input type="checkbox" id="toggle">
+                    <span class="slider"></span>
+                </label>
             </div>
             <div>
-                
-                <nav id="main-navigation">
-                    <div class="dropdown">
-                        <a href="#" class="active">Home</a>
-                        <div class="dropdown-content">
-                            <a href=#monthly-expense-overview>Yearly Spending</a>
-                            <a href="#expense-details">Pie Chart Spending</a>
-                            <a href="#bar-chart">Bar Graph Spending</a>
-                        </div>
+                <nav id="main-nav">
+                    <div id="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
-                    <a href="upload.html">Upload</a>
-                    <a href="transaction.html">Transaction</a>
-                    <a href="aboutUs.html">About us</a>
-                    <a href="admin.html">Admin</a>
-                    <span></span>
-                  </nav>
+                    <ul id="nav-items" class="columns hidden-small">
+                        <li><a href="index.html"><img src="images/home.png" alt="Home"><span class="nav-text">Home</span></a></li>
+                        <li><a href="upload.html"><img src="images/upload.png" alt="upload"><span class="nav-text">Upload</span></a></li>
+                        <li><a href="transaction.html"><img src="images/trans.png" alt="transaction"><span class="nav-text">Transaction</span></a></li>
+                        <li><a href="aboutUs.html"><img src="images/aboutUs.png" alt="About Us"><span class="nav-text">About Us</span></a></li>
+                        <li><a href="admin.html"><img src="images/admin.png" alt="admin"><span class="nav-text">Admin</span></a></li>
+                    </ul>
+                </nav>
             </div>
-           
             <div id="h-ul">
                 <div id="h-user">
                     <button class="nav-user"><img src="images/icons8-username-50.png" alt="Settings"></button>
@@ -36,15 +38,14 @@
                 <div id="h-logout">
                     <button class="nav-user"><img src="images/icons8-user-24.png" alt="Logout"></button>
                 </div>
+                
             </div>
         </header>
-        <!-- Body containing the divs holding the four sections -->  
-         
         <div class="home-dashboard">
+            <div class="expense-title">
+                <h1 id="top">Current Monthly Amount Spent</h1>
+            </div>
             <div class="monthly-expense-section" id="monthly-expense-overview">
-                <div class="expense-title">
-                    <h1>Current Monthly Amount Spent</h1>
-                </div>
                 <div class="progress-container">
                     <div class="progress-bar" id="monthly-expense-progress" style="width: 44%;"></div>
                 </div>
@@ -54,8 +55,8 @@
                 <div id="title">
                     <h1>Current Monthly Spending Distribution</h1>
                 </div>
-            
             <div class="expense-categories-section" id="expense-details">
+               
                 <div id="spending-pie-chart">
                     <div class="pie-chart"></div>
                 </div>
@@ -77,7 +78,7 @@
             </div>
         </div> 
         <div class="chart-container" id="bar-chart">
-            <h2>Monthly Spending Bar Chart by Categories</h2>
+            <h2 id="dark" >Monthly Spending Bar Chart by Categories</h2>
             <div class="bar-chart">
                 <div class="bar" style="height: 300px;">
                     <span class="label">Rent</span>
@@ -100,8 +101,137 @@
                     <span class="value">$250</span>
                 </div>
             </div>
+            <div id="table-by-cat">
+                <div class="table-column">
+                    <h3>Recent Food Purchases</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Taco Bell $43.54</td>
+                            </tr>
+                            <tr>
+                                <td>Cookout $19.32</td>
+                            </tr>
+                            <tr>
+                                <td>Mexican $23.98</td>
+                            </tr>
+                            <tr>
+                                <td>American Deli $7.00</td>
+                            </tr>
+                            <tr>
+                                <td>Starbucks $5.83</td>
+                            </tr>
+                            <tr>
+                                <td>Subway $13.83</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="table-column">
+                    <h3>Recent Bills Paid</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Water Bill $45.98</td>
+                            </tr>
+                            <tr>
+                                <td>Light Bill $126.33</td>
+                            </tr>
+                            <tr>
+                                <td>Rent $12,000</td>
+                            </tr>
+                            <tr>
+                                <td>Dentist $321.93</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Card $498</td>
+                            </tr>
+                            <tr>
+                                <td>Apple Music $9.99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="table-column">
+                    <h3>Recent Debt Obtained</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Student Loans $19,000</td>
+                            </tr>
+                            <tr>
+                                <td>Car Loan $12,938</td>
+                            </tr>
+                            <tr>
+                                <td>Overdraft fee $150</td>
+                            </tr>
+                            <tr>
+                                <td>Apple Macbook $1,200</td>
+                            </tr>
+                            <tr>
+                                <td>Credit card $321</td>
+                            </tr>
+                            <tr>
+                                <td>Hospital Bill $3,321.23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="table-column">
+                    <h3>Other</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Christmas Tree $89.33</td>
+                            </tr>
+                            <tr>
+                                <td>Pencils $4.32</td>
+                            </tr>
+                            <tr>
+                                <td>Shower Rod $12.99</td>
+                            </tr>
+                            <tr>
+                                <td>Laptop case $54.23</td>
+                            </tr>
+                            <tr>
+                                <td>ABC Store $39.98</td>
+                            </tr>
+                            <tr>
+                                <td>Candy Store $3.84</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
         </div>
-        
+
     <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; Caelenw 2024</p>
+    </footer>
 </body>
 </html>

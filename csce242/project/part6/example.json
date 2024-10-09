@@ -1,6 +1,7 @@
 [
     {
-        "Item": "Running Shoes",
+        "logo": "images/restaurant.png",
+        "Item": "Taco Bell",
         "Price": "$100",
         "Account": "User123",
         "Date": "2024-09-01",

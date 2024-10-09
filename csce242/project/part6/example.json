@@ -1,0 +1,39 @@
+[
+    {
+        "Item": "Running Shoes",
+        "Price": "$100",
+        "Account": "User123",
+        "Date": "2024-09-01",
+        "Categorie": "Footwear",
+        "Status": "Available",
+        "Comments": [
+            "Very comfortable.",
+            "Great for running."
+        ]
+    },
+    {
+        "Item": "Basketball Shoes",
+        "Price": "$120",
+        "Account": "User456",
+        "Date": "2024-09-05",
+        "Categorie": "Footwear",
+        "Status": "Available",
+        "Comments": [
+            "Good grip.",
+            "Stylish design."
+        ]
+    },
+    {
+        "Item": "Casual Sneakers",
+        "Price": "$80",
+        "Account": "User789",
+        "Date": "2024-09-10",
+        "Categorie": "Footwear",
+        "Status": "Out of Stock",
+        "Comments": [
+            "Perfect for everyday use.",
+            "Very durable."
+        ]
+    }
+]
+

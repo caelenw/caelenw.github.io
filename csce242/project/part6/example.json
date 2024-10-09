@@ -1,6 +1,6 @@
 [
     {
-        "logo": "restaurant.png",
+        "logo": "project/part6/images/restaurant.png",
         "Item": "Taco Bell",
         "Price": "$100",
         "Account": "Master Card",

@@ -758,3 +758,23 @@ footer {
     text-align: center;
     margin:0;
 }
+#spend {
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+#spending-section {
+    margin-top:3%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width:100%;
+}
+section {
+    width:25%;
+    font-size: auto;
+
+    border: 3px solid black;
+    padding:1%;
+    border-radius: 2%;
+}

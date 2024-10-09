@@ -33,13 +33,14 @@ const getSpendingSection = (spendingItem) => {
     logo.innerHTML = spendingItem.logo;
     section.append(logo);
 
-    const h3 = document.createElement("h3");  // Added quotes here
-    h3.innerHTML = spendingItem.Item;  // Corrected the property access
+
+    const h3 = document.createElement("h3");  
+    h3.innerHTML = spendingItem.Item;  
     section.append(h3);
 
-    const priceP = document.createElement("p"); // Fixed variable name
+    const priceP = document.createElement("p"); 
     priceP.innerHTML = spendingItem.Price;
-    section.append(priceP); // Corrected to append priceP
+    section.append(priceP); 
     
     const accountP = document.createElement("p");
     accountP.innerHTML = spendingItem.Account;
@@ -61,7 +62,7 @@ const getSpendingSection = (spendingItem) => {
     commentP.innerHTML= spendingItem.Comments;
     section.append(commentP);
 
-    return section; // Don't forget to return the section
+    return section; 
 };
 
 showSpending();

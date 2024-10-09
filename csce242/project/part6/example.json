@@ -12,27 +12,61 @@
         ]
     },
     {
-        "Item": "Basketball Shoes",
-        "Price": "$120",
-        "Account": "User456",
-        "Date": "2024-09-05",
-        "Categorie": "Footwear",
-        "Status": "Available",
+       "logo": "project/part6/images/restaurant.png",
+        "Item": "Taco Bell",
+        "Price": "$100",
+        "Account": "Master Card",
+        "Date": "2024-09-01",
+        "Categorie": "Food",
+        "Status": "Paid",
         "Comments": [
-            "Good grip.",
-            "Stylish design."
+            "Very Yummy!!"
         ]
     },
     {
-        "Item": "Casual Sneakers",
-        "Price": "$80",
-        "Account": "User789",
-        "Date": "2024-09-10",
-        "Categorie": "Footwear",
-        "Status": "Out of Stock",
+        "logo": "project/part6/images/restaurant.png",
+        "Item": "Taco Bell",
+        "Price": "$100",
+        "Account": "Master Card",
+        "Date": "2024-09-01",
+        "Categorie": "Food",
+        "Status": "Paid",
         "Comments": [
-            "Perfect for everyday use.",
-            "Very durable."
+            "Very Yummy!!"
+        ]
+    },
+    {
+        "logo": "project/part6/images/restaurant.png",
+        "Item": "Taco Bell",
+        "Price": "$100",
+        "Account": "Master Card",
+        "Date": "2024-09-01",
+        "Categorie": "Food",
+        "Status": "Paid",
+        "Comments": [
+            "Very Yummy!!"
+        ]
+    },
+    {"logo": "project/part6/images/restaurant.png",
+        "Item": "Taco Bell",
+        "Price": "$100",
+        "Account": "Master Card",
+        "Date": "2024-09-01",
+        "Categorie": "Food",
+        "Status": "Paid",
+        "Comments": [
+            "Very Yummy!!"
+        ]
+    },
+    {"logo": "project/part6/images/restaurant.png",
+        "Item": "Taco Bell",
+        "Price": "$100",
+        "Account": "Master Card",
+        "Date": "2024-09-01",
+        "Categorie": "Food",
+        "Status": "Paid",
+        "Comments": [
+            "Very Yummy!!"
         ]
     }
 ]

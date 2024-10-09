@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budget Within</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div id="h-title">
+                <img src="images/budget-within-high-resolution-logo-transparent.png">
+                <label class="toggle">
+                    <label>Dark Mode</label>
+                    <input type="checkbox" id="toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div>
+                <nav id="main-nav">
+                    <div id="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="columns hidden-small">
+                        <li><a href="index.html"><img src="images/home.png" alt="Home"><span class="nav-text">Home</span></a></li>
+                        <li><a href="upload.html"><img src="images/upload.png" alt="upload"><span class="nav-text">Upload</span></a></li>
+                        <li><a href="#"><img src="images/trans.png" alt="transaction"><span class="nav-text">Transaction</span></a></li>
+                        <li><a href="aboutUs.html"><img src="images/aboutUs.png" alt="About Us"><span class="nav-text">About Us</span></a></li>
+                        <li><a href="admin.html"><img src="images/admin.png" alt="admin"><span class="nav-text">Admin</span></a></li>
+                      </ul>
+                      
+                </nav>
+            </div>
+            <div id="h-ul">
+                <div id="h-user">
+                    <button class="nav-user"><img src="images/icons8-username-50.png" alt="Settings"></button>
+                </div>
+                <div id="h-logout">
+                    <button class="nav-user"><img src="images/icons8-user-24.png" alt="Logout"></button>
+                </div>
+            </div>
+        </header>
+        <section class="home-bb">
+            <h2 id="dark">View Transactions by Filter</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <select id="t-dropdown-menu">
+                                <option value="default" disabled selected>Select Category of Transaction</option>
+                                <option value="Food">Food</option>
+                                <option value="Health">Health</option>
+                                <option value="Savings">Savings</option>
+                                <option value="Rent">Rent</option>
+                                <option value="Pets">Pets</option>
+                                <option value="Insurance">Insurance</option>
+                                <option value="Kids">Kids</option>
+                                <option value="Debt">Debt</option>
+                                <option value="Rent/House">Rent/house</option>
+                                <option value="Savings">Savings</option>
+                                <option value="Car">Car</option>
+                                <option value="Other">Other</option>
+                            </select> 
+                        </th>
+                        <th>
+                            <select id="t-dropdown-menu">
+                                <option value="Status" disabled selected>Account Used In Transaction</option>
+                                <option value="Checking">Checking</option>    
+                                <option value="Credit">Credit</option>  
+                                <option value="Savings">Savings</option>  
+                                <option value="Other">Other</option>  
+                            </select>
+                        </th>
+                        <th>
+                            <select id="t-dropdown-menu">
+                                <option value="Status" disabled selected>Status of Transaction</option>
+                                <option value="Paid">Paid</option>    
+                                <option value="Pending">Pending</option>  
+                                <option value="Completed">Completed</option>  
+                            </select>
+                        </th>
+                        <th>
+                            <select id="t-dropdown-menu">
+                                <option value="Price" disabled selected>Price of Transaction</option>
+                                <option value="Paid">$0.00 - $100.00</option>    
+                                <option value="Pending">$101.00 - $250.00</option>  
+                                <option value="Completed">$251.00 - $500.00</option>  
+                                <option value="Completed">$501.00 +</option>  
+                            </select>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rent</td>
+                        <td>Checking</td>
+                        <td>Completed</td>
+                        <td>-2,300</td>
+                    </tr>
+                    <tr>
+                        <td>Light bill</td>
+                        <td>Checking</td>
+                        <td>Completed</td>
+                        <td>-$89.29</td>
+                    </tr>
+                    <tr>
+                        <td>Power</td>
+                        <td>Credit Card</td>
+                        <td>Un-paid</td>
+                        <td>-$253.33</td>
+                    </tr>
+                    <tr>
+                        <td>Gas</td>
+                        <td>Credit Card</td>
+                        <td>Un-paid</td>
+                        <td>-$62.84</td>
+                    </tr>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>Visa</td>
+                        <td>Completed</td>
+                        <td>-$165.44</td>
+                    </tr>
+                    <tr>
+                        <td>Movies</td>
+                        <td>Master Card</td>
+                        <td>Un-paid</td>
+                        <td>-$32.95</td>
+                    </tr>
+                    <tr>
+                        <td>Investment</td>
+                        <td>Savings</td>
+                        <td>Completed</td>
+                        <td>-$231.24</td>
+                    </tr>
+                    <tr>
+                        <td>Pay-Stub</td>
+                        <td>Checking Account</td>
+                        <td>Un-paid</td>
+                        <td>+$2,359.22</td>
+                    </tr>
+                    <tr>
+                        <td>Venmo</td>
+                        <td>Checking Account</td>
+                        <td>Completed</td>
+                        <td>+$88.50</td>
+                    </tr>
+                    <tr>
+                        <td>Netflix/Hulu</td>
+                        <td>Savings</td>
+                        <td>Completed</td>
+                        <td>-$10.99</td>
+                    </tr>
+                    <tr>
+                        <td>Shopping</td>
+                        <td>Checking Account</td>
+                        <td>Paid</td>
+                        <td>-$438.23</td>
+                    </tr>
+                    <tr>
+                        <td>Target</td>
+                        <td>Checking Account</td>
+                        <td>Un-paid</td>
+                        <td>-$103.22</td>
+                    </tr>
+                    <tr>
+                        <td>Lulu</td>
+                        <td>Credit Card</td>
+                        <td>Paid</td>
+                        <td>-$10.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; Caelenw 2024</p>
+    </footer>
+</body>
+</html>

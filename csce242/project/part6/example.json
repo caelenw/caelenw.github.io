@@ -3,13 +3,12 @@
         "logo": "images/restaurant.png",
         "Item": "Taco Bell",
         "Price": "$100",
-        "Account": "User123",
+        "Account": "Master Card",
         "Date": "2024-09-01",
-        "Categorie": "Footwear",
-        "Status": "Available",
+        "Categorie": "Food",
+        "Status": "Paid",
         "Comments": [
-            "Very comfortable.",
-            "Great for running."
+            "Very Yummy!!"
         ]
     },
     {

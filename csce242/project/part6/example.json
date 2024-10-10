@@ -1,6 +1,6 @@
 [
     {
-        "logo": "images/restaurant.png", 
+        "logo": "images/insurance.png", 
         "Item": "Doctor Appointment",
         "Price": "$120",
         "Account": "Insurance",
@@ -12,7 +12,7 @@
         ]
     },
     {
-        "logo": "project/part6/images/pharmacy.png",
+        "logo": "images/health.png",
         "Item": "Pharmacy Purchase",
         "Price": "$45",
         "Account": "Debit Card",
@@ -24,7 +24,7 @@
         ]
     },
     {
-        "logo": "project/part6/images/rent.png",
+        "logo": "images/rent.png",
         "Item": "Monthly Rent",
         "Price": "$1200",
         "Account": "Bank Transfer",
@@ -36,7 +36,7 @@
         ]
     },
     {
-        "logo": "project/part6/images/petfood.png",
+        "logo": "images/pets.png",
         "Item": "Pet Food",
         "Price": "$30",
         "Account": "Credit Card",
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "logo": "project/part6/images/insurance.png",
+        "logo": "images/insurance.png",
         "Item": "Health Insurance Premium",
         "Price": "$300",
         "Account": "Visa",
@@ -60,7 +60,7 @@
         ]
     },
     {
-        "logo": "project/part6/images/kids.png",
+        "logo": "/images/kids.png",
         "Item": "Kids' Toys",
         "Price": "$50",
         "Account": "Master Card",

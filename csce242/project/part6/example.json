@@ -1,6 +1,6 @@
 [
     {
-        "logo": "project/part6/images/doctor.png",
+        "logo": "https://caelenw.github.io/csce242/project/part6/images/restaurant.png",
         "Item": "Doctor Appointment",
         "Price": "$120",
         "Account": "Insurance",

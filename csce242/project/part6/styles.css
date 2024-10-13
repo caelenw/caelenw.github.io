@@ -95,7 +95,6 @@ body {
 }
 
 #main-nav .nav-text {
-    display: none;
     color:black;
     font-size: 14px; 
 }
@@ -106,10 +105,7 @@ body {
 header {
     background-color: var(--home-bb-color);
 }
-#main-nav a:hover {
-    background-color: var(--home-color); 
-    color: var(--white-color); 
-}
+
 
 #h-ul {
     display: flex;
@@ -617,15 +613,27 @@ tbody tr:nth-child(even) {
         display: none; 
       }
     
+      #h-title img {
+        margin:0;
+        width:35%;
+        padding:2%;
+      }
+      #h-ul {
+        margin:0;
+        position:absolute;
+        top:0px;
+      }
       #main-nav .nav-text {
-        display: block;
         font-size: 16px; 
         color: black; 
+       
       }
 
       #main-nav {
         display:flex;
         height:auto;
+        margin:0px;
+   
       }
       #table-by-cat {
         display:flex;
@@ -633,7 +641,15 @@ tbody tr:nth-child(even) {
         width:100%;
         margin:0;
       }
-
+      .toggle {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top:0px;
+        left:250px;
+    }
+    
     }
 
 
@@ -647,7 +663,7 @@ tbody tr:nth-child(even) {
         display: flex;
         align-items: center;
         cursor: pointer;
-        margin: 20px; 
+   
     }
     
     .toggle input {
@@ -782,15 +798,16 @@ footer {
     border: 3px solid black;
     border-radius: 2%;
     background-color: var(--home-bb-color);
+    justify-content: center;
+    text-align: center;
 }
 section:hover {
     
-    transform: scale(1.0); /* Scale the section to 102% */
+    transform: scale(1.0); 
 }
 #spend img {
-    position: relative;
-    top:0%;
-    margin:0;
+    justify-content: center;
+    text-align: left;
 }
 
 h3 {
@@ -829,7 +846,7 @@ h3 {
     right: 0;
     bottom: 0;
     cursor:pointer;
-    z-index: 1000; /* Ensure it is above other content */
+    z-index: 1000; 
 }
 
 .modal-content {

@@ -1,7 +1,5 @@
-// Fetch ice cream data from the provided URL
 const getIceCreams = async () => {
     const url = "https://portiaportia.github.io/json/ice-creams.json";
-
     try{
         const response = await fetch(url);
         return response.json();
@@ -12,7 +10,6 @@ const getIceCreams = async () => {
 
 const showIceCreams = async () => {
     const iceCreams = await getIceCreams();
-
     if (iceCreams && Array.isArray(iceCreams)) {
         iceCreams.forEach((iceCream) => {
             document.getElementById("icecream-section")

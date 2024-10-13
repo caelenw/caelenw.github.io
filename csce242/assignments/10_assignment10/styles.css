@@ -12,8 +12,9 @@ body {
 }
 
 #icecream-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
     padding: 16px;
 }
@@ -22,6 +23,8 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
+    flex: 1 1 calc(25% - 32px); 
+    max-width: calc(25% - 32px);
 }
 
 .ice-cream-section img {
@@ -49,19 +52,22 @@ body {
 }
 
 @media (max-width: 1200px) {
-    #icecream-section {
-        grid-template-columns: repeat(3, 1fr);
+    .ice-cream-section {
+        flex: 1 1 calc(33.33% - 32px); 
+        max-width: calc(33.33% - 32px);
     }
 }
 
 @media (max-width: 768px) {
-    #icecream-section {
-        grid-template-columns: repeat(2, 1fr);
+    .ice-cream-section {
+        flex: 1 1 calc(50% - 32px); 
+        max-width: calc(50% - 32px);
     }
 }
 
 @media (max-width: 480px) {
-    #icecream-section {
-        grid-template-columns: 1fr;
+    .ice-cream-section {
+        flex: 1 1 100%; 
+        max-width: 100%;
     }
 }

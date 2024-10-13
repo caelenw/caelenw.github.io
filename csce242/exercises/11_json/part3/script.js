@@ -1,4 +1,4 @@
-//"https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
+// Function to get vodka drinks
 const getVodka = async () => {
     const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=vodka";
 
@@ -10,19 +10,73 @@ const getVodka = async () => {
     }
 };
 
-const showDrinks = async () => {
+// Function to display vodka drinks
+const showVodkaDrinks = async () => {
     const data = await getVodka();
-    const drinks = data.drinks; // Ensure that data.drinks exists
+    const drinks = data.drinks;
 
     if (drinks) {
         drinks.forEach((drinkItem) => {
-            document.getElementById("drinks-section").append(getDrinkSection(drinkItem));
+            document.getElementById("vodka-section").append(getDrinkSection(drinkItem));
         });
     } else {
-        console.log("No drinks found");
+        console.log("No vodka drinks found");
     }
 };
 
+// Function to get tequila drinks
+const getTequila = async () => {
+    const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=tequila";
+
+    try {
+        const response = await fetch(url);
+        return response.json();
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+// Function to display tequila drinks
+const showTequilaDrinks = async () => {
+    const data = await getTequila();
+    const drinks = data.drinks;
+
+    if (drinks) {
+        drinks.forEach((drinkItem) => {
+            document.getElementById("tequila-section").append(getDrinkSection(drinkItem));
+        });
+    } else {
+        console.log("No tequila drinks found");
+    }
+};
+
+// Function to get rum drinks
+const getRum = async () => {
+    const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=rum";
+
+    try {
+        const response = await fetch(url);
+        return response.json();
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+// Function to display rum drinks
+const showRumDrinks = async () => {
+    const data = await getRum();
+    const drinks = data.drinks;
+
+    if (drinks) {
+        drinks.forEach((drinkItem) => {
+            document.getElementById("rum-section").append(getDrinkSection(drinkItem));
+        });
+    } else {
+        console.log("No rum drinks found");
+    }
+};
+
+// Function to generate the drink section HTML
 const getDrinkSection = (drinkItem) => {
     const section = document.createElement("section");
 
@@ -51,6 +105,7 @@ const getDrinkSection = (drinkItem) => {
     instructionsP.innerHTML = "Instructions: " + drinkItem.strInstructions;
     section.append(instructionsP);
 
+    // Display ingredients (only if available)
     for (let i = 1; i <= 15; i++) {
         const ingredient = drinkItem[`strIngredient${i}`];
         const measure = drinkItem[`strMeasure${i}`];
@@ -65,73 +120,7 @@ const getDrinkSection = (drinkItem) => {
     return section;
 };
 
-showDrinks();
-
-const getTequila = async () => {
-    const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=tequila";
-
-    try {
-        const response = await fetch(url);
-        return response.json();
-    } catch (error) {
-        console.log(error);
-    }
-};
-
-const showTequilaDrinks = async () => {
-    const data = await getTequila();
-    const drinks = data.drinks; // Ensure that data.drinks exists
-
-    if (drinks) {
-        drinks.forEach((drinkItem) => {
-            document.getElementById("tequila-section").append(getDrinkSection(drinkItem));
-        });
-    } else {
-        console.log("No tequila drinks found");
-    }
-};
-
-const getTequillaSection = (drinkItem) => {
-    const section = document.createElement("section");
-
-    const logo = document.createElement("img");
-    logo.src = drinkItem.strDrinkThumb;
-    logo.alt = drinkItem.strDrink + " Image";
-    section.append(logo);
-
-    const h3 = document.createElement("h3");
-    h3.innerHTML = drinkItem.strDrink;
-    section.append(h3);
-
-    const categoryP = document.createElement("p");
-    categoryP.innerHTML = "Category: " + drinkItem.strCategory;
-    section.append(categoryP);
-
-    const alcoholicP = document.createElement("p");
-    alcoholicP.innerHTML = "Alcoholic: " + drinkItem.strAlcoholic;
-    section.append(alcoholicP);
-
-    const glassP = document.createElement("p");
-    glassP.innerHTML = "Glass: " + drinkItem.strGlass;
-    section.append(glassP);
-
-    const instructionsP = document.createElement("p");
-    instructionsP.innerHTML = "Instructions: " + drinkItem.strInstructions;
-    section.append(instructionsP);
-
-    for (let i = 1; i <= 15; i++) {
-        const ingredient = drinkItem[`strIngredient${i}`];
-        const measure = drinkItem[`strMeasure${i}`];
-
-        if (ingredient) {
-            const ingredientP = document.createElement("p");
-            ingredientP.innerHTML = `${measure ? measure : ""} ${ingredient}`;
-            section.append(ingredientP);
-        }
-    }
-
-    return section;
-};
-
+// Call the functions to display the drinks for vodka, tequila, and rum
+showVodkaDrinks();
 showTequilaDrinks();
-
+showRumDrinks();

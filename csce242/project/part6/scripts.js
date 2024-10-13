@@ -6,6 +6,24 @@ document.getElementById('toggle').addEventListener('change', function() {
     document.body.classList.toggle('dark-mode', this.checked);
 });
 
+document.querySelectorAll(".nav-user").forEach((button) => {
+    button.onclick = () => {
+        document.getElementById("login-modal").classList.remove("hidden");
+    };
+});
+
+document.getElementById("close-modal").onclick = () => {
+    document.getElementById("login-modal").classList.add("hidden");
+};
+
+window.onclick = (event) => {
+    const modal = document.getElementById("login-modal");
+    if (event.target === modal) {
+        modal.classList.add("hidden");
+    }
+};
+
+
 const getSpending = async () => {
     const url = "https://caelenw.github.io/csce242/project/part6/example.json";
 
@@ -29,7 +47,7 @@ const getSpendingSection = (spendingItem) => {
     const section = document.createElement("section");
     const logo = document.createElement("img");
     logo.src = spendingItem.logo; 
- 
+    logo.alt = "Restaurant Logo"; 
     section.append(logo);
 
     document.body.append(section);

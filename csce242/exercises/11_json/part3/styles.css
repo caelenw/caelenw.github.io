@@ -1,100 +1,62 @@
-:root {
-    --primary: coral;
-    --secondary: cornflowerblue;
-  }
-  
-  /* Structure */
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: azure;
-  }
-  
-  /* Navigation */
-  #main-nav ul {
-    padding-left: 0px;
-    list-style-type: none;
-  }
-  
-  #main-nav li {
-    background: var(--secondary);
-    padding: 10px;
-    margin: 2px 0;
-  }
-  
-  #main-nav a {
-    text-decoration: none;
-    color: blanchedalmond;
-  }
-  
-  /* Hamburger Menu */
-  #nav-toggle div {
-    width: 35px;
-    height: 5px;
-    background-color: var(--primary);
-    margin: 6px 0;
-  }
-  
-  /* Typography */
-  #main-nav-items {
-    font-size: 1.2em;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .hide {
-    visibility: hidden;
-  }
-  
-  #square {
-    --x: 100px;
-    width: var(--x);
-    height: var(--x);
-    margin-top: 10px;
-    background-color: blueviolet;
-  }
-  
-  .drink {
-    background: #fff;
-    padding: 5px;
-    margin: 5px;
-  }
-  
-  h3 {
-    text-align: center;
-  }
-  
-  .drink img {
-    max-width: 40%;
-    display: block;
-    margin: auto;
-  }
-  
-  /* Larger Resolutions */
-  @media (min-width: 900px) {
-    #main-nav-items li {
-      flex: 1;
-    }
-  
-    #main-nav-items a {
-      border-bottom: 2px solid transparent;
-    }
-  
-    #main-nav-items a:hover {
-      border-bottom: 2px solid var(--primary);
-    }
-  
-    #nav-toggle {
-      display: none;
-    }
-  
-    .columns {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    .drink {
-      flex: 30%;
-    }
-  }
+/* General Section Styling */
+section {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+ h1 {
+  text-align: center;
+  font-size: 50px;
+  color:#ee0e42
+}
+section:hover {
+  transform: scale(1.05);
+}
+
+/* Drink Image Styling */
+section img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Drink Title Styling */
+section h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Drink Info Styling */
+section p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+/* Layout for Drink Sections */
+#vodka-section, #tequila-section, #rum-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Background Colors for Each Section */
+#vodka-section section {
+  background-color: #f0f8ff; /* Light blue for vodka */
+}
+
+#tequila-section section {
+  background-color: #fffacd; /* Light yellow for tequila */
+}
+
+#rum-section section {
+  background-color: #ffe4e1; /* Light pink for rum */
+}
+body {
+  background-color: black;
+}

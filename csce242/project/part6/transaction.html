@@ -8,7 +8,7 @@
     <div class="main">
         <header>
             <div id="h-title">
-                <img src="images/budget-within-high-resolution-logo-transparent.png">
+                <img src="images/budget-within-high-resolution-logo-transparent.png" alt="Budget Within Logo">
                 <label class="toggle">
                     <label>Dark Mode</label>
                     <input type="checkbox" id="toggle">
@@ -24,20 +24,28 @@
                     </div>
                     <ul id="nav-items" class="columns hidden-small">
                         <li><a href="index.html"><img src="images/home.png" alt="Home"><span class="nav-text">Home</span></a></li>
-                        <li><a href="upload.html"><img src="images/upload.png" alt="upload"><span class="nav-text">Upload</span></a></li>
-                        <li><a href="#"><img src="images/trans.png" alt="transaction"><span class="nav-text">Transaction</span></a></li>
+                        <li><a href="upload.html"><img src="images/upload.png" alt="Upload"><span class="nav-text">Upload</span></a></li>
+                        <li><a href="transaction.html"><img src="images/trans.png" alt="Transaction"><span class="nav-text">Transaction</span></a></li>
                         <li><a href="aboutUs.html"><img src="images/aboutUs.png" alt="About Us"><span class="nav-text">About Us</span></a></li>
-                        <li><a href="admin.html"><img src="images/admin.png" alt="admin"><span class="nav-text">Admin</span></a></li>
-                      </ul>
-                      
+                        <li><a href="admin.html"><img src="images/admin.png" alt="Admin"><span class="nav-text">Admin</span></a></li>
+                    </ul>
                 </nav>
             </div>
             <div id="h-ul">
-                <div id="h-user">
-                    <button class="nav-user"><img src="images/icons8-username-50.png" alt="Settings"></button>
-                </div>
                 <div id="h-logout">
-                    <button class="nav-user"><img src="images/icons8-user-24.png" alt="Logout"></button>
+                    <button class="nav-user"><img src="images/login.png" alt="Logout"><label>Login</label></button>
+                    <div id="login-modal" class="modal hidden">
+                        <div class="modal-content">
+                            <span class="close-button" id="close-modal">&times;</span>
+                            <form id="login-form">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" ><br>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" ><br>
+                                <button type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>

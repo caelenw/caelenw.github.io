@@ -141,20 +141,68 @@
                         ></iframe>
                     </div>
                 </div>
-                <form id="contacted" action="#" method="POST">
-                    <input type="hidden" name="access_key" value="0574eceb-b718-4128-9789-6cd747c843d6">
-                    <input type="text" name="name" required placeholder="Your Name">
-                    <input type="email" name="email" required placeholder="Your Email">
-                    <textarea name="message" required placeholder="Your Message"></textarea>
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                    <button type="submit">Submit Form</button>
-                </form>
+               <hr>
+               <h1 class="bfb-title">Need Help? Contact Us Below</h1>
                 
-                <div id="result"></div>
-                
-           
-            
+               <section class="info-section">
+
+                <div class="columns1">
+                    <img src="images/budget-within-high-resolution-logo-transparent.png">
+
+                  <form
+                    id="contact-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                  >
+                    <input
+                      type="hidden"
+                      name="access_key"
+                      value="0574eceb-b718-4128-9789-6cd747c843d6"
+
+                    />
+          
+                    <p>
+                      <label for="name">Name:</label>
+                      <input
+                        id="name"
+                        type="text"
+                        placeholder="first and last"
+                        name="name"
+                        required
+                      />
+                    </p>
+                    <p>
+                      <label for="email">Email:</label>
+                      <input id="email" type="email" name="email" required />
+                    </p>
+                    <p>
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" required></textarea>
+                    </p>
+                    <input
+                      type="hidden"
+                      name="redirect"
+                      value="https://web3forms.com/success"
+                    />
+                    <input
+                      type="hidden"
+                      name="subject"
+                      value="Contact from BudgetWithin Website"
+                    />
+                    <input type="hidden" name="from_name" value="My Website" />
+          
+                    <p>
+                      <button type="submit">Submit Form</button>
+                    </p>
+          
+                    <p id="result"></p>
+                  </form>
+                </div>
+              </section>
+            <hr>
+
     <script src="scripts.js"></script>
+    <script src="contactme.js"></script>
     <footer>
         <p>&copy; Caelenw 2024</p>
     </footer>

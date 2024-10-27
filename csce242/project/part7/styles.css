@@ -962,13 +962,159 @@ form button:hover {
 }
 
 
+/*for contact form*/
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parallax {
+  height: 100%;
+  opacity: 0.65;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* So we can center content inside */
+}
+
+.home {
+  background-image: url("images/jasp-tree.jpg");
+}
+
+.face {
+  background-image: url("images/jasp-house.jpg");
+}
+
+.leash {
+  background-image: url("images/jasp-leash.jpg");
+}
+
+.info-section {
+  background-color: #595a5c;
+  font-size: 36px;
+  flex: 1;
+  color: white;
+}
+
+.info-section section {
+  padding: 0 10px;
+  margin: 0 10px;
+  flex: 1;
+}
+
+img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.info-section img {
+  max-width: 300px;
+}
+
+.text-center p {
+  width: 60%;
+  margin: auto;
+}
+
+/* Main Menu */
+#main-menu {
+  z-index: 1;
+  background-color: #595a5c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#main-menu ul {
+  float: right;
+  overflow: hidden;
+  margin-right: 2%;
+}
+
+#main-menu li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#main-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.info-section form {
+  margin-right: 10px;
+}
+
+/* Form */
 
 
 
+.info-section {
+    max-width: 100%; 
+    margin: 25%; 
+    text-align: center; 
+    background-color: var(--header-color);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-top:0;
+    border-radius: 8px;
+}
 
+.columns1 {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
 
+.columns1 img {
+    display: block; 
+    margin: 3% ; 
+    display:flex;
+    width:100%;
+}
 
+#contact-form {
+    display: flex; 
+    flex-direction: column; 
+    align-items: stretch;
+    width: 100%; 
+    max-width: 600px; 
+    margin: 3%; 
+}
 
+#contact-form p {
+    margin: 5px; 
+}
+#contact-form {
+    font-size: 22px;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    display: block; 
+    width: 100%; 
+    box-sizing: border-box; 
+    color: black; 
+    background-color: var(--white-color); 
+    border: 1px ;
+    border-radius: 4px; 
+}
 
+button {
+    background-color: var(--button-color, #007BFF);
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
 
 

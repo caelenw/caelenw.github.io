@@ -147,13 +147,7 @@ label.toggle {
     flex-direction: row; 
 }
 
-#spending-pie-chart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%; 
-}
+
 
 .expense-categories-section {
     width:95%;
@@ -204,14 +198,6 @@ label.toggle {
     text-align: center;
     cursor: default;
     width:50%;
-}
-
-.chart-container {
-    width: 97%;
-    margin:2%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
 .bar {
@@ -576,6 +562,7 @@ tbody tr:nth-child(even) {
 }
 
 @media screen and (max-width: 768px) {
+    
     #mtt-content {
         flex-direction: column;
         align-items: center;
